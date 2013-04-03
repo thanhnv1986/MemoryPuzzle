@@ -83,6 +83,7 @@
             NSNumber *value1=[_arrValue objectAtIndex:_firstChose.value];
             NSNumber *value2=[_arrValue objectAtIndex:_secondChose.value];
             if(value1.intValue == value2.intValue){
+                
                 [self correctSound];
 
                 [UIView animateWithDuration:0.5 animations:^{
@@ -118,6 +119,7 @@
                 
             }
             _turnNumber ++;
+
             self.turnNumberLabel.text = [NSString stringWithFormat:@"Turn number : %d",_turnNumber];
             
         }
