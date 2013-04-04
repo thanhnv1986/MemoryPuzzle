@@ -11,6 +11,7 @@
 		5A1E3DA5170D6DD500C292F0 /* Confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E3DA4170D6DD500C292F0 /* Confetti.png */; };
 		5A94FD7A170D839300025C63 /* WinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A94FD79170D839300025C63 /* WinnerView.m */; };
 		5A94FD7C170D83A200025C63 /* WinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A94FD7B170D83A200025C63 /* WinnerView.xib */; };
+		5A94FD7E170D8BBA00025C63 /* ios-6-iphone-wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A94FD7D170D8BBA00025C63 /* ios-6-iphone-wallpaper.jpg */; };
 		5AFCC70E170BBE900007A31C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC70D170BBE900007A31C /* UIKit.framework */; };
 		5AFCC710170BBE900007A31C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC70F170BBE900007A31C /* Foundation.framework */; };
 		5AFCC712170BBE900007A31C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC711170BBE900007A31C /* CoreGraphics.framework */; };
@@ -44,6 +45,7 @@
 		5A94FD78170D839300025C63 /* WinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinnerView.h; sourceTree = "<group>"; };
 		5A94FD79170D839300025C63 /* WinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinnerView.m; sourceTree = "<group>"; };
 		5A94FD7B170D83A200025C63 /* WinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinnerView.xib; sourceTree = "<group>"; };
+		5A94FD7D170D8BBA00025C63 /* ios-6-iphone-wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ios-6-iphone-wallpaper.jpg"; sourceTree = "<group>"; };
 		5AFCC70A170BBE900007A31C /* MemoryPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFCC70D170BBE900007A31C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5AFCC70F170BBE900007A31C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +160,7 @@
 		5AFCC730170BBE960007A31C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A94FD7D170D8BBA00025C63 /* ios-6-iphone-wallpaper.jpg */,
 				5A1E3DA4170D6DD500C292F0 /* Confetti.png */,
 				5AFCC74E170C06180007A31C /* background.mp3 */,
 				5AFCC742170C02900007A31C /* wrong.mp3 */,
@@ -245,6 +248,7 @@
 				5AFCC74F170C06180007A31C /* background.mp3 in Resources */,
 				5A1E3DA5170D6DD500C292F0 /* Confetti.png in Resources */,
 				5A94FD7C170D83A200025C63 /* WinnerView.xib in Resources */,
+				5A94FD7E170D8BBA00025C63 /* ios-6-iphone-wallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,7 @@
     AVAudioPlayer *_audioPlayer;
     AVAudioPlayer *_backgroundSound;
     WinnerView *_winnerView;
+    
 }
 @property (weak, nonatomic) IBOutlet UILabel *comboLabel;
 @property (weak, nonatomic) IBOutlet UILabel *turnNumberLabel;
@@ -50,6 +51,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_timeLabel setFont:[UIFont fontWithName:@"DBLCDTempBlack" size:25]];
     [self startGameSound];
     _arrImageName = [[NSArray alloc]initWithObjects:@"Baseball.png", @"Football.png", @"Blocks.png", @"Checkers.png", @"Dinner.png", @"MathGraph.png", nil];
 
@@ -59,10 +61,8 @@
     [button.titleLabel setTextAlignment:NSTextAlignmentCenter];
     [button addTarget:self action:@selector(ReplayGame:) forControlEvents:UIControlEventTouchUpInside];
     [button setBackgroundColor:[UIColor clearColor]];
-    button.frame = CGRectMake(38, 260, 244, 44);
+    button.frame = CGRectMake(38, 300, 244, 44);
     [self.view addSubview:button];
-    // Do any additional setup after loading the view, typically from a nib.
-    //[self createGame];
 }
 
 - (void)HandlerTapGesture:(UITapGestureRecognizer *)tab {
@@ -97,9 +97,9 @@
     NSNumber *value2 = [_arrValue objectAtIndex:_secondChose.value];
     if (value1.intValue == value2.intValue) {
         [self correctSound];
-        if(_isCombo){
-            _comboNumber ++;
-            self.comboLabel.text=[NSString stringWithFormat:@"Combo : %d",_comboNumber];
+        if (_isCombo) {
+            _comboNumber++;
+            self.comboLabel.text = [NSString stringWithFormat:@"Combo : %d", _comboNumber];
         }
         _isCombo = YES;
         [UIView animateWithDuration:0.5 animations:^{
@@ -116,7 +116,7 @@
         }];
     } else {
         [self wrongSound];
-        _isCombo=NO;
+        _isCombo = NO;
         [_firstChose shakeImage];
         [_secondChose shakeImage];
         [UIView animateWithDuration:0.5 animations:^{
@@ -138,7 +138,7 @@
 }
 
 - (void)createGame {
-    _isCombo =NO;
+    _isCombo = NO;
     _isFirstChose = YES;
     _timeOut = TIME_OUT;
     self.timeProgress.progress = 1.0;
@@ -146,7 +146,7 @@
     _comboNumber = 0;
     _nextTurn = YES;
     _stateLabel.hidden = YES;
-    if (_winnerView!=nil) {
+    if (_winnerView != nil) {
         [_winnerView removeFromSuperview];
         _winnerView = nil;
         _backgroundSound.volume = 1;
