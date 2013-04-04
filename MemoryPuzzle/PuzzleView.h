@@ -12,4 +12,5 @@
 @property (nonatomic,strong) UIImageView *imageView;
 @property (nonatomic) NSInteger value;
 - (void)setImage:(UIImage*)image;
+- (void)shakeImage;
 @end

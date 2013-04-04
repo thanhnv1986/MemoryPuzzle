@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1E3DA3170D1DB800C292F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1E3DA2170D1DB800C292F0 /* QuartzCore.framework */; };
+		5A1E3DA5170D6DD500C292F0 /* Confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E3DA4170D6DD500C292F0 /* Confetti.png */; };
+		5A94FD7A170D839300025C63 /* WinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A94FD79170D839300025C63 /* WinnerView.m */; };
+		5A94FD7C170D83A200025C63 /* WinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A94FD7B170D83A200025C63 /* WinnerView.xib */; };
 		5AFCC70E170BBE900007A31C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC70D170BBE900007A31C /* UIKit.framework */; };
 		5AFCC710170BBE900007A31C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC70F170BBE900007A31C /* Foundation.framework */; };
 		5AFCC712170BBE900007A31C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCC711170BBE900007A31C /* CoreGraphics.framework */; };
@@ -35,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A1E3DA2170D1DB800C292F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5A1E3DA4170D6DD500C292F0 /* Confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Confetti.png; sourceTree = "<group>"; };
+		5A94FD78170D839300025C63 /* WinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinnerView.h; sourceTree = "<group>"; };
+		5A94FD79170D839300025C63 /* WinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinnerView.m; sourceTree = "<group>"; };
+		5A94FD7B170D83A200025C63 /* WinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinnerView.xib; sourceTree = "<group>"; };
 		5AFCC70A170BBE900007A31C /* MemoryPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFCC70D170BBE900007A31C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5AFCC70F170BBE900007A31C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1E3DA3170D1DB800C292F0 /* QuartzCore.framework in Frameworks */,
 				5AFCC74B170C04B80007A31C /* AVFoundation.framework in Frameworks */,
 				5AFCC70E170BBE900007A31C /* UIKit.framework in Frameworks */,
 				5AFCC710170BBE900007A31C /* Foundation.framework in Frameworks */,
@@ -86,7 +96,6 @@
 		5AFCC701170BBE900007A31C = {
 			isa = PBXGroup;
 			children = (
-				5AFCC74A170C04B80007A31C /* AVFoundation.framework */,
 				5AFCC73B170BC1150007A31C /* PuzzleView.h */,
 				5AFCC73C170BC1150007A31C /* PuzzleView.m */,
 				5AFCC730170BBE960007A31C /* Resources */,
@@ -107,6 +116,8 @@
 		5AFCC70C170BBE900007A31C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A1E3DA2170D1DB800C292F0 /* QuartzCore.framework */,
+				5AFCC74A170C04B80007A31C /* AVFoundation.framework */,
 				5AFCC70D170BBE900007A31C /* UIKit.framework */,
 				5AFCC70F170BBE900007A31C /* Foundation.framework */,
 				5AFCC711170BBE900007A31C /* CoreGraphics.framework */,
@@ -123,6 +134,9 @@
 				5AFCC726170BBE900007A31C /* ViewController.m */,
 				5AFCC728170BBE900007A31C /* ViewController.xib */,
 				5AFCC714170BBE900007A31C /* Supporting Files */,
+				5A94FD78170D839300025C63 /* WinnerView.h */,
+				5A94FD79170D839300025C63 /* WinnerView.m */,
+				5A94FD7B170D83A200025C63 /* WinnerView.xib */,
 			);
 			path = MemoryPuzzle;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 		5AFCC730170BBE960007A31C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A1E3DA4170D6DD500C292F0 /* Confetti.png */,
 				5AFCC74E170C06180007A31C /* background.mp3 */,
 				5AFCC742170C02900007A31C /* wrong.mp3 */,
 				5AFCC743170C02900007A31C /* lose.mp3 */,
@@ -228,6 +243,8 @@
 				5AFCC748170C02900007A31C /* correct.mp3 in Resources */,
 				5AFCC749170C02900007A31C /* win.mp3 in Resources */,
 				5AFCC74F170C06180007A31C /* background.mp3 in Resources */,
+				5A1E3DA5170D6DD500C292F0 /* Confetti.png in Resources */,
+				5A94FD7C170D83A200025C63 /* WinnerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +259,7 @@
 				5AFCC71E170BBE900007A31C /* AppDelegate.m in Sources */,
 				5AFCC727170BBE900007A31C /* ViewController.m in Sources */,
 				5AFCC73D170BC1150007A31C /* PuzzleView.m in Sources */,
+				5A94FD7A170D839300025C63 /* WinnerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +382,7 @@
 				5AFCC72F170BBE900007A31C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
